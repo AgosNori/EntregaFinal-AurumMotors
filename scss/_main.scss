@@ -1,0 +1,21 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/extends";
+
+@import "base/reset";
+
+@import "layout/header";
+@import "layout/banner";
+@import "layout/footer";
+
+@import "components/acercade";
+@import "components/maps";
+@import "components/buttons";
+@import "components/cards";
+
+@import "pages/galeria";
+@import "pages/contacto";
+@import "pages/productos";
+@import "pages/caracteristicas";
+
+@import "utilities/mediaqueries";

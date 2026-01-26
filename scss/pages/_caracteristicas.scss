@@ -1,0 +1,22 @@
+.tituloCaract {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+}
+
+.paralelogramo {
+    width: 320px;
+    height: 200px;
+    transition: transform 0.3s ease;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+    }
+}
