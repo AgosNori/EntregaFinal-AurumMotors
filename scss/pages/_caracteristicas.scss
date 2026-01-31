@@ -2,7 +2,7 @@
 @use "../abstracts/extends" as *;
 @use "../abstracts/variables" as *;
 
-// Layout: footer abajo y espacio con el contenido
+
 body.paginaCaract {
   min-height: 100vh;
   display: flex;
@@ -12,7 +12,7 @@ body.paginaCaract {
 
 .mainCaract {
   flex: 1;
-  padding-top: 5rem; // espacio por navbar fixed
+  padding-top: 5rem; 
   padding-bottom: 4rem;
 }
 
