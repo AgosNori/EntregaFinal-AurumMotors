@@ -10,3 +10,19 @@
   letter-spacing: 1px;
   color: $color;
 }
+
+// Caracteristicas
+@mixin responsive-title($margin-mobile, $margin-desktop) {
+  margin: $margin-mobile;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin: $margin-desktop;
+  }
+}
+
+@mixin paralelogramo-size($max-width) {
+  width: 100%;
+  max-width: $max-width;
+  aspect-ratio: 16 / 10;
+}

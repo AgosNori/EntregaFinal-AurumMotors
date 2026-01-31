@@ -1,21 +1,47 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/extends";
+// @import "abstracts/variables";
+// @import "abstracts/mixins";
+// @import "abstracts/extends";
 
-@import "base/reset";
+// @import "base/reset";
 
-@import "layout/header";
-@import "layout/banner";
-@import "layout/footer";
+// @import "layout/header";
+// @import "layout/banner";
+// @import "layout/footer";
 
-@import "components/acercade";
-@import "components/maps";
-@import "components/buttons";
-@import "components/cards";
+// @import "components/acercade";
+// @import "components/maps";
+// @import "components/buttons";
+// @import "components/cards";
 
-@import "pages/galeria";
-@import "pages/contacto";
-@import "pages/productos";
-@import "pages/caracteristicas";
+// @import "pages/galeria";
+// @import "pages/contacto";
+// @import "pages/productos";
+// @import "pages/caracteristicas";
 
-@import "utilities/mediaqueries";
+// @import "utilities/mediaqueries";
+
+
+/* ABSTRACTS */
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/extends";
+
+/* BASE */
+@use "base/reset";
+
+/* LAYOUT */
+@use "layout/header";
+@use "layout/footer";
+@use "layout/banner";
+
+/* COMPONENTS */
+@use "components/acercade";
+@use "components/buttons";
+@use "components/cards";
+@use "components/maps";
+
+/* PAGES */
+@use "pages/caracteristicas";
+@use "pages/contacto";
+@use "pages/galeria";
+@use "pages/productos";

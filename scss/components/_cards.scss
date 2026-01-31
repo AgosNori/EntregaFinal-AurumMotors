@@ -1,10 +1,9 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .tituCategoria {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: $black;
-  display: flex;
-  justify-content: center;
+  @include flex-center;
+  @include title(2.5rem, $black);
   margin: 3rem;
 }
 
@@ -32,6 +31,7 @@
   }
 
   .btn-arrow {
+    @include flex-center;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -39,9 +39,6 @@
     height: 45px;
     border-radius: 50%;
     background: $white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 20px;
   }
 }

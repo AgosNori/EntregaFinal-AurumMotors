@@ -1,16 +1,41 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/extends" as *;
+
 .fotosGaleria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 
-    .card {
-        width: 20rem;
-        border-radius: $radius-sm;
+  .card {
+    width: 20rem;
+    border-radius: $radius-sm;
 
-        &-img-top {
-            height: 250px;
-            object-fit: cover;
-        }
+    &-img-top {
+      @extend %image-cover;
+      height: 250px;
     }
+
+
+    position: relative;
+
+    .galeria-card-nombre {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem 1.25rem;
+      background: rgba($black, 0.75);
+      color: $white;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity $transition;
+    }
+
+    &:hover .galeria-card-nombre {
+      opacity: 1;
+    }
+  }
 }

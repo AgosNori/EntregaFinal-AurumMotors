@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/extends" as *;
+
 .btnBanner {
   @extend %btn-base;
   padding: 12px 26px;
@@ -12,6 +15,7 @@
 }
 
 .btnEnviar {
+  @extend %btn-base;
   border: none;
   padding: 14px;
   border-radius: $radius-sm;
